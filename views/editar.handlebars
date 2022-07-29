@@ -1,0 +1,12 @@
+<h1>Formulário</h1>
+<form action="/edit-pagamento/{{pagamentos.id}}" method="POST">
+
+    ID: {{Usuario.id}}
+    <label>Nome</label>
+    <input type="text" name="nome"value="{{Usuario.nome}}"><br><br>
+    <label>email</label>
+    <input type="email" name="email" value="{{Usuario.email}}"><br><br>
+<label>Senha</label>
+    <input type="password" name="senha" value="{{Usuario.senha}}"><br><br>    
+    <button type="sumbit">Atualizar</button>
+</form>
