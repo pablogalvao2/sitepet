@@ -1,0 +1,56 @@
+
+<head>
+    <title>Cadastro</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="/css/login/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/css/login/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/css/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/css/login/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/css/login/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/css/login/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/css/login/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/css/login/css/main.css">
+<!--===============================================================================================-->
+</head>
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <img class="rounded-circle" src="img/petshop.png" alt="petshop" width="250" height="250" >
+            <div class="login100-pic js-tilt" data-tilte="">
+
+{{#each usuario}}
+    ID: {{id}}<br>
+    Nome: {{nome}}<br>
+    Email: {{email}}<br>
+    Senha: {{senha}}<br>
+    Nome animal: {{nome_pet}}<br>
+    Cadastrado: {{#formatDate createdAt}}{{/formatDate}}<br>
+    <a href="/del-usuario/{{id}}"><button  class="login100-form-btn">Apagar</button></a> <br>
+    <a href="/edit-pet/{{id}}"><button  class="login100-form-btn">Editar</button></a>
+    <hr>
+{{/each}}
+
+
+
+<form action="/" method="GET" class="login100-form validate-form">
+    <div class="container-login100-form-btn">
+                    <button type="submit" class="login100-form-btn">
+                        Sair
+                    </button>
+                    
+                </div>
+    </form>
+            
+            </div>
+        </div>
+    </div>   
+</div>

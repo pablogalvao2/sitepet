@@ -1,0 +1,77 @@
+<head>
+    <title>Cadastro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="/css/login/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/css/login/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/css/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/css/login/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/css/login/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/css/login/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/css/login/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/css/login/css/main.css">
+    <!--===============================================================================================-->
+</head>
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <div class="login100-pic js-tilt" data-tilte="">
+
+
+                <h1>Formulário</h1>
+                <form action="/edit-pet/{{usuario.id}}" method="POST">
+
+                    ID: {{Usuario.id}}
+                    <div class="wrap-input100 validate-input" data-validate="Digite seu nome">
+                        <input class="input100" type="text" name="nome" placeholder="Nome" id="">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100"></span>
+                    </div>
+                    <br>
+                    <div class="wrap-input100 validate-input" data-validate="Digite seu email">
+                        <input class="input100" type="email" name="email" placeholder="Email" id="">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100"></span>
+                    </div>
+                    <br>
+                    <div class="wrap-input100 validate-input" data-validate="Digitar senha">
+                        <input class="input100" type="text" name="senha" placeholder="Senha" id="">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100"></span>
+                    </div>
+                    <br>
+                    <div class="wrap-input100 validate-input" data-validate="Digite o nome do pet">
+                        <input class="input100" type="text" name="nome_pet" placeholder="Nome_pets" id="">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100"></span>
+                    </div>
+                    <br>
+                    <div class="container-login100-form-btn">
+                        <form action="/" method="GET" class="login100-form validate-form">
+                            <button type="sumbit" class="login100-form-btn">
+                                Atualizar
+                            </button>
+                    </div>
+                        </form>
+                </form>
+
+                <form action="/" method="GET" class="login100-form validate-form">
+                    <div class="container-login100-form-btn">
+                        <button type="submit" class="login100-form-btn">
+                            Sair
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
